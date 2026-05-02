@@ -7,7 +7,8 @@ aiofiles
 pydantic
 python-docx
 httpx
-python-magic-bin
+python-magic; sys_platform != 'win32'
+python-magic-bin; sys_platform == 'win32'
 pdfplumber
 markitdown
 ollama
