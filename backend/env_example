@@ -1,0 +1,9 @@
+# Choose your LLM Provider SDK: "ollama" or "wokushop"
+SDK=wokushop
+
+# Local Ollama Configuration
+OLLAMA_MODEL=gemma4:e2b
+
+# Wokushop Configuration (Using OpenAI Compatible API)
+WOKUSHOP_API_KEY=sk-your-api-key-here
+WOKUSHOP_MODEL=gemini-3.1-flash-lite-preview

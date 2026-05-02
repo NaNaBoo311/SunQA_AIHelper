@@ -1,0 +1,15 @@
+fastapi
+uvicorn
+python-multipart
+markdown
+pypdf
+aiofiles
+pydantic
+python-docx
+httpx
+python-magic-bin
+pdfplumber
+markitdown
+ollama
+python-dotenv
+openai
