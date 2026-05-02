@@ -7,7 +7,8 @@ const Navigation = () => {
   const handleClearSession = async () => {
     if (window.confirm("Are you sure you want to clear all data and start a new session?")) {
       try {
-        await fetch('http://localhost:8000/api/documents/clear', { method: 'DELETE' });
+        const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:8000/api';
+        await fetch(`${apiUrl}/documents/clear`, { method: 'DELETE' });
         window.location.reload();
       } catch (err) {
         console.error("Failed to clear session:", err);
